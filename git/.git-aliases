@@ -1,0 +1,13 @@
+[alias]
+	br = branch
+	ci = commit
+	co = checkout
+	d = diff --color-words
+	dh = diff HEAD
+	st = status
+	s = status -s
+	l = log --stat -C
+	ph = push
+	pl = pull
+	pub = push -u origin
+	rv = remote -v

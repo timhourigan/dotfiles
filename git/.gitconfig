@@ -1,0 +1,6 @@
+[user]
+	# email = INSERT
+	name = Tim Hourigan
+[include]
+	path = ~/.git-aliases
+	path = ~/.git-credentials

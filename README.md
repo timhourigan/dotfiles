@@ -1,2 +1,20 @@
 # dotfiles
-Personal dotfiles
+
+## Instructions
+
+```shell
+# Install GNU stow, if it isn't present already
+$ sudo apt install -y stow # Debian/Ubuntu example
+
+# Clone the directory to ~/.dotfiles
+$ git clone https://github.com/timhourigan/dotfiles.git ~/.dotfiles
+
+# Change to the .dotfiles directory
+$ cd ~/.dotfiles
+
+# Setup a tool e.g. git
+$ stow git
+# This will create aliases of all the files in the "git" folder to home
+# ~/.git-aliases -> .dotfiles/git/.git-aliases
+# ~/.gitconfig -> .dotfiles/git/.gitconfig
+# ~/.git-credentials -> .dotfiles/git/.git-credentials
