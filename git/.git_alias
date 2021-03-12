@@ -9,5 +9,5 @@
 	l = log --stat -C
 	ph = push
 	pl = pull
-	pub = push -u origin
+	pub = push origin -u
 	rv = remote -v
