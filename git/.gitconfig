@@ -1,4 +1,4 @@
 [include]
-	path = ~/.git-user
-	path = ~/.git-alias
-	path = ~/.git-credential
+	path = ~/.git_user
+	path = ~/.git_alias
+	path = ~/.git_credential

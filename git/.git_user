@@ -1,0 +1,4 @@
+[user]
+	# Insert example and name - Note, future changes of this file have been ignored with "$ git update-index --skip-worktree .git_user"
+	email =
+	name =
