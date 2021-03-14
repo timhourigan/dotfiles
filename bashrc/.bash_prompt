@@ -1,16 +1,19 @@
 # shellcheck shell=bash
 
-_git_branch()
+__prompt_git_branch()
 {
-    # Alternative on git >=2.22 `git branch --show-current`
+    # Alternatives:
+    # git branch --show-current (git >=2.22)
+    # __git_ps1
     local BRANCH
     BRANCH="$(git rev-parse --abbrev-ref HEAD 2> /dev/null)"
+
     if [ ! "${BRANCH}" == "" ]; then
         echo "(${BRANCH})"
     fi
 }
 
-prompt_command()
+__prompt_command()
 {
     # Black       0;30     Dark Gray     1;30
     # Blue        0;34     Light Blue    1;34
@@ -26,7 +29,7 @@ prompt_command()
     local NO_COLOUR="\[\033[0;0m\]"
 
     # username@hostname:dirpath (git branch)$
-    PS1="${BROWN}\u@\h:${BLUE}\w ${GREEN}\`_git_branch\`${NO_COLOUR}\\$ "
+    PS1="${GREEN}\u@\h:${BLUE}\w ${BROWN}\`__prompt_git_branch\`${NO_COLOUR}\\$ "
 }
 
-PROMPT_COMMAND=prompt_command
+PROMPT_COMMAND=__prompt_command
