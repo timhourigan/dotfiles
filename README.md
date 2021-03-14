@@ -22,9 +22,9 @@ $ stow git
 
 ## Configurations
 
-| Name  | Notes                                            |
-|:------|:-------------------------------------------------|
-| `git` | Requires `email` to be updated in `~/.gitconfig` |
+| Name  | Notes                                                      |
+|:------|:-----------------------------------------------------------|
+| `git` | Requires `email` and `name` to be customised, as necessary |
 
 
 ## Useful References
