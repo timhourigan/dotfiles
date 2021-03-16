@@ -15,21 +15,39 @@ __prompt_git_branch()
 
 __prompt_command()
 {
-    # Black       0;30     Dark Gray     1;30
-    # Blue        0;34     Light Blue    1;34
-    # Green       0;32     Light Green   1;32
-    # Cyan        0;36     Light Cyan    1;36
-    # Red         0;31     Light Red     1;31
-    # Purple      0;35     Light Purple  1;35
-    # Brown       0;33     Yellow        1;33
-    # Light Gray  0;37     White         1;37
-    local BLUE="\[\033[0;34m\]"
-    local GREEN="\[\033[0;32m\]"
-    local BROWN="\[\033[0;33m\]"
+    # username@hostname:dirpath (git branch)$
+
     local NO_COLOUR="\[\033[0;0m\]"
 
-    # username@hostname:dirpath (git branch)$
-    PS1="${GREEN}\u@\h:${BLUE}\w ${BROWN}\`__prompt_git_branch\`${NO_COLOUR}\\$ "
+    # 8/16 Colours - Currently unused
+    # Black       0;30     Dark Gray     1;30
+    # Red         0;31     Light Red     1;31
+    # Green       0;32     Light Green   1;32
+    # Brown       0;33     Yellow        1;33
+    # Blue        0;34     Light Blue    1;34
+    # Purple      0;35     Light Purple  1;35
+    # Cyan        0;36     Light Cyan    1;36
+    # Light Gray  0;37     White         1;37
+    # local GREEN_16="\[\033[0;32m\]"
+    # local BLUE_16="\[\033[0;34m\]"
+    # local BROWN_16="\[\033[0;33m\]"
+    # local CYAN_16="\[\033[0;36m\]"
+    # PS1="${CYAN_16}\u@\h:${BLUE_16}\w ${BROWN_16}\`__prompt_git_branch\`${NO_COLOUR}\\$ "
+
+    # 256 Colours
+    # local GREY_256="\[\033[38;5;240m\]"
+    # local PINK_256="\[\033[38;5;132m\]"
+    local GREEN_256="\[\033[38;5;42m\]"
+    local BLUE_256="\[\033[38;5;110m\]"
+    local ORANGE_256="\[\033[38;5;136m\]"
+    local RED_256="\[\033[38;5;124m\]"
+
+    if [ "$(id -u)" == 0 ]; then
+        # root
+        PS1="${RED_256}\u@\h:\w \`__prompt_git_branch\`${NO_COLOUR}\\$ "
+    else
+        PS1="${ORANGE_256}\u@\h:${BLUE_256}\w ${GREEN_256}\`__prompt_git_branch\`${NO_COLOUR}\\$ "
+    fi
 }
 
 PROMPT_COMMAND=__prompt_command
