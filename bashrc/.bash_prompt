@@ -35,18 +35,20 @@ __prompt_command()
     # PS1="${CYAN_16}\u@\h:${BLUE_16}\w ${BROWN_16}\`__prompt_git_branch\`${NO_COLOUR}\\$ "
 
     # 256 Colours
-    # local GREY_256="\[\033[38;5;240m\]"
-    # local PINK_256="\[\033[38;5;132m\]"
-    local GREEN_256="\[\033[38;5;42m\]"
+    local GREEN_256="\[\033[38;5;29m\]"
     local BLUE_256="\[\033[38;5;110m\]"
-    local ORANGE_256="\[\033[38;5;136m\]"
     local RED_256="\[\033[38;5;124m\]"
+    # local PINK_256="\[\033[38;5;132m\]"
+    local ORANGE_256="\[\033[38;5;173m\]"
+    # local GREY_256="\[\033[38;5;234m\]"
+    # Backgrounds
+    local BG_GREY_256="\[\033[48;5;234m\]"
 
     if [ "$(id -u)" == 0 ]; then
         # root
         PS1="${RED_256}\u@\h:\w \`__prompt_git_branch\`${NO_COLOUR}\\$ "
     else
-        PS1="${ORANGE_256}\u@\h:${BLUE_256}\w ${GREEN_256}\`__prompt_git_branch\`${NO_COLOUR}\\$ "
+        PS1="${BG_GREY_256}${ORANGE_256}\u@\h:${BLUE_256}\w ${GREEN_256}\`__prompt_git_branch\`${NO_COLOUR}\\$ "
     fi
 }
 
