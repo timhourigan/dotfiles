@@ -1,0 +1,16 @@
+# shellcheck shell=bash
+
+# Additional bash configuration. Assumes `.bashrc` contains:
+# if [ -f ~/.bash_extras ]; then
+#     . ~/.bash_extras
+# fi
+
+# Prompt
+if [ -f ~/.bash_prompt ]; then
+    . ~/.bash_prompt
+fi
+
+# Autojump
+if [ -f /usr/share/autojump/autojump.sh ]; then
+    . /usr/share/autojump/autojump.sh
+fi

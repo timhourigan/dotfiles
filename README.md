@@ -15,16 +15,20 @@ $ cd ~/.dotfiles
 # Setup a configuration e.g. git
 $ stow git
 # This will create aliases of all the files in the "git" folder to home
-# ~/.git-aliases -> .dotfiles/git/.git-aliases
+# ~/.git_aliases -> .dotfiles/git/.git_aliases
 # ~/.gitconfig -> .dotfiles/git/.gitconfig
-# ~/.git-credentials -> .dotfiles/git/.git-credentials
+# ~/.git_credentials -> .dotfiles/git/.git_credentials
+
+# Remove a configuration e.g. git
+$ stow -D git
 ```
 
 ## Configurations
 
-| Name  | Notes                                            |
-|:------|:-------------------------------------------------|
-| `git` | Requires `email` to be updated in `~/.gitconfig` |
+| Name     | Notes                                                                          |
+|:---------|:-------------------------------------------------------------------------------|
+| `bashrc` | Shell configuration.                                                           |
+| `git`    | Git configuration - Requires `email` and `name` to be customised, as necessary |
 
 
 ## Useful References
