@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.0] - 2021-03-16
+
+- Add bash prompt
+- Update `git` to noreply e-mail
+
 ## [0.3.0] - 2021-03-12
 
 - Update `git` filenames to underscores, for consistency
