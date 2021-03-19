@@ -7,10 +7,13 @@
 
 # Prompt
 if [ -f ~/.bash_prompt ]; then
+    # shellcheck source=bashrc/.bash_prompt
     . ~/.bash_prompt
 fi
 
 # Autojump
 if [ -f /usr/share/autojump/autojump.sh ]; then
+    # Don't try to check autojump.sh
+    # shellcheck disable=SC1091
     . /usr/share/autojump/autojump.sh
 fi

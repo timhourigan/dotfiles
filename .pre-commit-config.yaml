@@ -1,0 +1,13 @@
+---
+repos:
+  - repo: https://github.com/timhourigan/pre-commit-hooks
+    rev: 0.2.0
+    hooks:
+      - id: shellcheck
+        stages: [commit]
+      - id: shellcheck
+        name: shellcheck - Analyse shell scripts:.bash* files
+        stages: [commit]
+        # Override hook defaults, to check .bash* files
+        types: [file]
+        files: \.bash.*
