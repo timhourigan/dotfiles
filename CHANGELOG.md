@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.5.0] - 2021-03-21
+
+- Add `pre-commit` hooks configuration
+- Fix `shellcheck` highlighted issues in .bash_extras
+
 ## [0.4.0] - 2021-03-16
 
 - Add bash prompt
