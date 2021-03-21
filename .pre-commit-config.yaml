@@ -5,7 +5,7 @@ repos:
     hooks:
       - id: shellcheck
         stages: [commit]
-        # Second instance to checck .bash*
+        # Second instance to check .bash*
       - id: shellcheck
         name: shellcheck - Analyse shell scripts:.bash* files
         stages: [commit]
