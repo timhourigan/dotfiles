@@ -29,10 +29,7 @@ $ stow -D git
 |:---------|:-------------------------------------------------------------------------------|
 | `bashrc` | bash shell configuration                                                       |
 | `git`    | git configuration - Requires `email` and `name` to be customised, as necessary |
-| `neovim` | neovim editor configuration                                                    |
-| `vim`    | vim editor configuration                                                       |
-
-
+| `vim`    | vim editor configuration - Additional points neovim to ~/.vimrc                |
 
 ## Useful References
 
