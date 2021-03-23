@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.6.0] - 2021-03-23
+
+- Add `vim` initial configuration
+
 ## [0.5.0] - 2021-03-21
 
 - Add `pre-commit` hooks configuration
