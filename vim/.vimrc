@@ -1,8 +1,16 @@
-" Turn on line numbers
-set number
+""" Behaviour
 
 " Allow backspacing over a) autoindent b) line breaks c) start of insert mode
 set backspace=indent,eol,start
+
+
+""" Appearance
+
+" Turn on line numbers
+set number
+
+" Set colour scheme
+:colorscheme torte
 
 " Turn on syntax highlighting
 syntax on
