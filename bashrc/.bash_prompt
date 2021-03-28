@@ -1,5 +1,24 @@
 # shellcheck shell=bash
 
+__prompt_python_venv()
+{
+    local VENV
+
+    if [ ! "${VIRTUAL_ENV}" == "" ]; then
+        # Strip path to "/", to get name
+        VENV="${VIRTUAL_ENV##*/}"
+
+        if [ "${PIPENV_ACTIVE}" == "1" ]; then
+            # Strip name, to remove random pipenv string after last "-"
+            VENV="${VENV%-*}"
+        fi
+    fi
+
+    if [ ! "${VENV}" == "" ]; then
+        echo "(${VENV}) "
+    fi
+}
+
 __prompt_git_branch()
 {
     # Alternatives:
@@ -38,7 +57,7 @@ __prompt_command()
     local GREEN_256="\[\033[38;5;29m\]"
     local BLUE_256="\[\033[38;5;110m\]"
     local RED_256="\[\033[38;5;124m\]"
-    # local PINK_256="\[\033[38;5;132m\]"
+    local PINK_256="\[\033[38;5;132m\]"
     local ORANGE_256="\[\033[38;5;173m\]"
     # local GREY_256="\[\033[38;5;234m\]"
     # Backgrounds
@@ -48,7 +67,7 @@ __prompt_command()
         # root
         PS1="${RED_256}\u@\h:\w \`__prompt_git_branch\`${NO_COLOUR}\\$ "
     else
-        PS1="${BG_GREY_256}${ORANGE_256}\u@\h:${BLUE_256}\w ${GREEN_256}\`__prompt_git_branch\`${NO_COLOUR}\\$ "
+        PS1="${BG_GREY_256}${PINK_256}\`__prompt_python_venv\`${ORANGE_256}\u@\h:${BLUE_256}\w ${GREEN_256}\`__prompt_git_branch\`${NO_COLOUR}\\$ "
     fi
 }
 
