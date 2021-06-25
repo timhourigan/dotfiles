@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [0.7.0] - 2021-03-28
 
+- Add `tmux` initial configuration
+
+## [0.7.0] - 2021-03-28
+
 - Add Python virtual env to prompt
 
 ## [0.6.0] - 2021-03-23
