@@ -2,7 +2,7 @@
 
 | Command                | Description      |
 |:-----------------------|:-----------------|
-| `ctrl-a |`             | Horizontal Split |
+| `ctrl-a &#124;`        | Horizontal Split |
 | `ctrl-a -`             | Vertical Split   |
 | `ctrl-a :`             | Command prompt   |
 | `ctrl-a r`             | Reload config    |
