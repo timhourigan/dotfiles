@@ -1,0 +1,12 @@
+---
+extends: default
+
+rules:
+  line-length:
+    max: 120
+    level: warning
+  # To allow minimal modification to default alacritty config
+  comments:
+    require-starting-space: false
+  # To allow minimal modification to default alacritty config
+  comments-indentation: disable

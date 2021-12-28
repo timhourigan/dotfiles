@@ -2,9 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.7.0] - 2021-03-28
+## [0.9.0] - 2021-12-28
 
-- Add `tmux` initial configuration
+- Add `alacritty` configuration
+- Add 'yamllint' repo configuration
+
+## [0.8.0] - 2021-06-25
+
+- Add `tmux` configuration
 
 ## [0.7.0] - 2021-03-28
 
@@ -12,7 +17,7 @@ All notable changes to this project will be documented in this file.
 
 ## [0.6.0] - 2021-03-23
 
-- Add `vim` initial configuration
+- Add `vim` configuration
 
 ## [0.5.0] - 2021-03-21
 
