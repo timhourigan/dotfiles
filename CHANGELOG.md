@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [0.10.0] - 2022-03-02
 
 - Add `fzf` configuration
+- Update `shellcheck` hook to follow sources
 
 ## [0.9.0] - 2021-12-28
 
