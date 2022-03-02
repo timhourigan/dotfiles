@@ -25,13 +25,13 @@ $ stow -D git
 
 ## Configurations
 
-| Name        | Notes                                                                          |
-|:------------|:-------------------------------------------------------------------------------|
-| `alacritty` | alacritty terminal configuration                                               |
-| `bashrc`    | bash shell configuration                                                       |
-| `git`       | git configuration - Requires `email` and `name` to be customised, as necessary |
-| `tmux`      | tmux configuration                                                             |
-| `vim`       | vim editor configuration - Additionally points neovim to ~/.vimrc              |
+| Name        | Notes                                                                                         |
+|:------------|:----------------------------------------------------------------------------------------------|
+| `alacritty` | alacritty terminal configuration                                                              |
+| `bashrc`    | bash shell configuration - prompt, `autojump`, `fzf` see [bashrc/README.md](bashrc/README.md) |
+| `git`       | git configuration - Requires `email` and `name` to be customised, as necessary                |
+| `tmux`      | tmux configuration                                                                            |
+| `vim`       | vim editor configuration - Additionally points neovim to ~/.vimrc                             |
 
 ## Useful References
 

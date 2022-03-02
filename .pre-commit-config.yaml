@@ -5,10 +5,12 @@ repos:
     hooks:
       - id: shellcheck
         stages: [commit]
+        args: [-x]
         # Second instance to check .bash*
       - id: shellcheck
         name: shellcheck - Analyse shell scripts:.bash* files
         stages: [commit]
+        args: [-x]
         # Override hook defaults, to check .bash* files
         types: [file]
         files: \.bash.*

@@ -2,10 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.10.0] - 2022-03-02
+
+- Add `fzf` configuration
+
 ## [0.9.0] - 2021-12-28
 
 - Add `alacritty` configuration
-- Add 'yamllint' repo configuration
+- Add `yamllint` repo configuration
 
 ## [0.8.0] - 2021-06-25
 
