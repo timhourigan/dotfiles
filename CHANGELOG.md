@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.11.0] - 2022-07-04
+
+- Add `nix` package manager configuration
+
 ## [0.10.0] - 2022-03-02
 
 - Add `fzf` configuration
