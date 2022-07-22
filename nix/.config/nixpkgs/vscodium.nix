@@ -34,6 +34,8 @@
       "workbench.iconTheme" = "material-icon-theme";
       # No startup splashscreen
       "workbench.startupEditor" = "none";
+      # Git config
+      "git.confirmSync" = false; 
     };
   };
 }
