@@ -1,0 +1,2 @@
+{ programs.alacritty = { enable = true; }; }
+
