@@ -36,6 +36,8 @@
       "workbench.startupEditor" = "none";
       # Git config
       "git.confirmSync" = false; 
+      # No confirm on drag and drop
+      "explorer.confirmDragAndDrop" = false;
     };
   };
 }
