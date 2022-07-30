@@ -38,6 +38,8 @@
       "git.confirmSync" = false; 
       # No confirm on drag and drop
       "explorer.confirmDragAndDrop" = false;
+      # No confirm on delete
+      "explorer.confirmDelete" = false;
     };
   };
 }
