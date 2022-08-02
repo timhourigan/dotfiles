@@ -22,8 +22,10 @@
     exa
     fd
     htop
+    jq
     nixfmt
     ripgrep
+    tig
     tldr
     tree
 
@@ -63,8 +65,10 @@
     ./configs/bash.nix
     ./configs/direnv.nix
     ./configs/fzf.nix
+    ./configs/gh.nix
     ./configs/git.nix
     ./configs/neovim.nix
+    ./configs/rofi.nix
     ./configs/starship.nix
     ./configs/tmux.nix
     ./configs/vscodium.nix
