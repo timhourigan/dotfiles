@@ -17,11 +17,23 @@
 
   # Packages to be installed
   home.packages = with pkgs; [
+    # Utils
     bat
-    chromium
     exa
     fd
     htop
+    nixfmt
+    ripgrep
+    tldr
+    tree
+
+    # Apps
+    libreoffice
+
+    # Browsers
+    chromium
+
+    # Fonts
     (nerdfonts.override {
       fonts = [
         "DejaVuSansMono"
@@ -33,12 +45,9 @@
         "Terminus"
       ];
     })
-    libreoffice
-    nixfmt
-    ripgrep
+    twitter-color-emoji
+    noto-fonts-emoji
     powerline-fonts
-    tldr
-    tree
 
     # Node
     nodejs
@@ -50,7 +59,9 @@
   # Programs and configurations to be installed
   imports = [
     ./configs/alacritty.nix
+    ./configs/autojump.nix
     ./configs/bash.nix
+    ./configs/direnv.nix
     ./configs/fzf.nix
     ./configs/git.nix
     ./configs/neovim.nix

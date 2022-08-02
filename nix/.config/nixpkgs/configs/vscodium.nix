@@ -40,6 +40,10 @@
       "explorer.confirmDragAndDrop" = false;
       # No confirm on delete
       "explorer.confirmDelete" = false;
+      # Turn off telemetry
+      "telemetry.telemetryLevel" = "off";
+      # Turn off Redhat telemetry
+      "redhat.telemetry.enabled" = false;
     };
   };
 }
