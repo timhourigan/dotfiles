@@ -44,6 +44,8 @@
       "telemetry.telemetryLevel" = "off";
       # Turn off Redhat telemetry
       "redhat.telemetry.enabled" = false;
+      # Turn off auto-updates, let Nix manage
+      "update.mode" = "none";
     };
   };
 }

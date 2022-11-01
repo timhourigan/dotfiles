@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 {
-
   # Let Home Manager install and manage itself
   programs.home-manager.enable = true;
 
@@ -19,12 +18,17 @@
   home.packages = with pkgs; [
     # Utils
     bat
+    du-dust
     exa
     fd
+    feh
     htop
     jq
     nixfmt
+    nmap
     ripgrep
+    task-warrior
+    tealdeer
     tig
     tldr
     tree
