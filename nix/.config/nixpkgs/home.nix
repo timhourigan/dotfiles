@@ -27,8 +27,7 @@
     nixfmt
     nmap
     ripgrep
-    task-warrior
-    tealdeer
+    taskwarrior
     tig
     tldr
     tree
@@ -76,5 +75,6 @@
     ./configs/starship.nix
     ./configs/tmux.nix
     ./configs/vscodium.nix
+    # ./configs/zsh.nix
   ];
 }
