@@ -35,7 +35,7 @@
       # No startup splashscreen
       "workbench.startupEditor" = "none";
       # Git config
-      "git.confirmSync" = false; 
+      "git.confirmSync" = false;
       # No confirm on drag and drop
       "explorer.confirmDragAndDrop" = false;
       # No confirm on delete
@@ -46,6 +46,8 @@
       "redhat.telemetry.enabled" = false;
       # Turn off auto-updates, let Nix manage
       "update.mode" = "none";
+      # Trim newlines at end of file
+      "files.trimFinalNewlines" = true;
     };
   };
 }
