@@ -14,8 +14,8 @@
         full_symbol = "🔋";
         charging_symbol = "🔌";
         discharging_symbol = "⚡";
+        display = [{ threshold = 20; }];
       };
-      battery.display = [{ threshold = 20; }];
 
       memory_usage = {
         disabled = false;
@@ -26,7 +26,7 @@
       };
 
       time = {
-        disabled = false;
+        disabled = true;
         format = "[$time]($style) ";
         time_format = "%R";
       };
