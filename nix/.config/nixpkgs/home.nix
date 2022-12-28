@@ -24,6 +24,7 @@
     feh
     htop
     jq
+    neofetch
     nixfmt
     nmap
     ripgrep
@@ -33,6 +34,8 @@
     tree
 
     # Apps
+    filezilla
+    gimp
     libreoffice
 
     # Browsers
